@@ -1,0 +1,78 @@
+<html>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  </head>
+  <body>
+    <div class=form-container>
+      <h1 class="heading">Sign Up Form</h1>
+          <form name="mySignUpForm" action="success.html" onsubmit="return validationSignUp()">
+
+              <div>
+                  <div class="inputHeading">First Name</div>
+                      <input id="fnameID" type="text" name="myFirst"></input> 
+                  <div id="fnameerror" class="error"></div>
+              </div>
+              
+              <div>
+                  <div class="inputHeading">Last Name</div>
+                      <input id="lnameID" type="text" name="myLast"></input>
+                  <div id="lnameerror" class="error"></div>
+              </div>
+
+              <div>
+                  <div class="inputHeading">Email ID</div>
+                      <input id="emailID" type="text" name="myEmail"></input>
+                  <div id="emailerror" class="error"></div>
+              </div>
+
+              <div>
+                  <div class="inputHeading">New Password</div>
+                      <input id="npwd" type="password" name="mynpwd"></input>
+              </div>
+
+              <div>
+                  <div class="inputHeading">Re-Enter Password</div>
+                      <input id="rpwd" type="password" name="myrpwd"></input>
+                  <div id="pwderror" class="error"></div>
+              </div>
+
+              <div>
+                  <div class="inputHeading">Phone Number</div>
+                      <input id="phoneID" type="number" name="myPhone"></input>
+                  <div id="phoneerror" class="error"></div>
+              </div>
+
+              <div>
+                  <div class="inputHeading">Gender</div> 
+                      <input type="radio" name="myGender" value="Male">Male</input>
+                      <input type="radio" name="myGender" value="Male">Female</input>
+                      <input type="radio" name="myGender" value="Male">Others</input>
+              </div>
+
+              <div>
+                  <div class="inputHeading">Age</div>
+                      <input type="number" name="myAge"></input>
+                  <div class="error"></div>
+              </div>
+
+              <div>
+                  <div class="inputHeading">Country</div>
+                      <select>
+                          <option value="India">India</option>
+                          <option value="Spain">Spain</option>
+                          <option value="Italy">Italy</option>
+                          <option value="Denmark">Denmark</option>
+                      </select>
+              </div>
+
+              <div>
+                  <input id="signupbtn" type="submit" name="mySubmit" value="Sign Up"></input>
+              </div>
+          </form>
+      </div>
+
+
+      <script type="text/javascript" src="signup.js"></script>
+  </body>
+</html>
